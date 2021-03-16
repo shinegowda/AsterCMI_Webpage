@@ -1,0 +1,319 @@
+/*===== Generic CSS ======*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family:'Open Sans',sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+p{
+    font-size: 14px;
+}
+/*===== Generic CSS ====*/
+.section-title h3 {
+    color:#22B78E;
+    font-weight: 600;
+    margin-top:40px;
+    margin-bottom: 40px;
+}
+
+/*===== Header ========*/
+.header-overlay{
+    background-image: url(../images/header_Background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+.header-logo{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.header-text{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.header-text h2{
+    font-family:'Titillium Web',sans-serif;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+}
+.header-text h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    line-height: 36px;
+    /* text-align: justify; */
+}
+.btn-bookApointment,
+.btn-bookApointment:focus,
+.btn-bookApointment:active,
+.btn-bookApointment:visited {
+
+    background-color:#DD5A6A;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 3px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.btn-bookApointment:hover {
+    background-color: #129CF3;
+    color:#fff;
+}
+.enquire-form {
+    height:450px;
+    width:300px;
+    background-color:#fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.enquire-form h4 {
+    font-size: 21px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0 auto;
+    display:table;
+}
+.formcontrol {
+   margin:0 auto;
+   display: table;
+   width: 80%;
+   padding: 5px 10px;
+   font-size: 14px;
+   line-height: 21px;
+   color: #555;
+   margin-bottom:8px;
+   border: 1px solid #aeaeae;
+   border: 1px solid #aeaeae;
+   border-radius: 3px;
+   opacity: 0.8;
+   outline: 0px !important;
+   transition: all 1s;
+   -moz-transition: all 1s;
+   -o-transition: all 1s;
+   -webkit-transition: all 1s;
+}
+.btn-submit {
+    background-color:#DD5A6A;
+    padding: 8px 25px;
+    font-size: 14px;
+    color: #fff;
+    margin:0 auto;
+    display: table;
+}
+/*==== About section =======*/
+.about-wrapper{
+    padding-top: 50px;
+}
+.about-header{
+    margin-top:15px;
+    padding:10px;
+    background-image: linear-gradient(to right,#2EC4B8,#6078EA);
+}
+.about-header p{
+    font-size: 14px;
+    font-weight: bold;
+    color:#fff;
+}
+.about-content {
+    margin-top: 10px;
+}
+.line-break{
+    border:1px solid #ECECFF;
+}
+/*===== Doctors section ======*/
+.doctors-innerwrapper{
+    text-align:center;
+}
+.doctors-innerwrapper h4 {
+    color:#22B78E;
+    font-weight: 600;
+    padding: 20px;
+}
+.doctors-innerwrapper h5{
+    color: #1D5AA6;
+    font-weight: 700;
+    margin-top: 30px;
+    letter-spacing:1px;
+}
+.doctors-innerwrapper .designation {
+    color:#1D5AA6;
+}
+.btn-knowmore {
+    background-image: linear-gradient(to right,#17EAD9,#6078EA);
+    color:#fff;
+}
+.doctors-innerwrapper .designation-breakup{
+    width:10%;
+    margin:10px auto;
+    color:#22B78E;
+}
+.doctors-innerwrapper .block-breakup{
+    width:80%;
+    margin: 20px auto;
+    color:#ECECFF;
+}
+.doctors-innerwrapper .PediatricBMT-wrapper{
+    width:90%;
+    background-color: #F9F9FF;
+}
+.doctors-innerwrapper .AdultBmt-wrapper{
+    width:90%;
+    background-color: #F9F9FF;
+}
+.section-description p:before {
+    content: "";
+    display: block;
+    background: url("../images/medical.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+/*==== Warning section =====*/
+.warning-icon {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #E5EAFF;
+    margin:20px;
+}
+.warning-icon img {
+    padding:10px;
+}
+.warning-icon p {
+    padding:10px;
+}
+/*==== Questionare =====*/
+.questionare{
+    margin-top: 50px;
+}
+.questionare h5{
+    color:#1D5AA6;
+    font-weight: 700;
+    display:inline;
+}
+.questionare p:before {
+    content: "";
+    display: block;
+    background: url("../images/double-tick-indicator.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+.questionare hr {
+    border:1px solid #ECECFF;
+}
+.questionare img{
+    float: right;
+}
+/*===== Testimonials =====*/
+.testimonials-caption{
+    padding-bottom: 70px;
+}
+.carousel-inner {
+    padding-top: 50px;
+    background-color: rgba(31,31,31,.75);
+}
+.carousel-inner .carousel-item {
+    color: #F9F9FF;
+}
+.btn-apointment,
+.btn-apointment:focus,
+.btn-apointment:active,
+.btn-apointment:visited {
+    background-color:#004498;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 3px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.btn-apointment:hover {
+    background-color:#129CF3;
+}
+.book-apointment {
+    margin-top:50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+/*====== Footer =====*/
+.footer {
+    background-color: #272727;
+    padding-bottom: 35px;
+    padding-top: 35px;
+}
+.footer hr {
+    color:#ffffff;
+}
+.social-icon ul li a .fa {
+  padding: 5px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.social-icon ul li a .fa:hover {
+    opacity:0.7;
+}
+.social-icon ul li a .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+.social-icon ul li a .fa-instagram{
+    background: #125688;
+    color: white;
+  }
+.social-icon ul li a .fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+.social-icon ul li a .fa-twitter{
+    background: #55ACEE;
+    color: white;
+}
+.social-icon ul li a .fa-linkedin{
+    background: #007bb5;
+    color: white;
+}
+.social-icon ul li {
+    list-style: none;
+    display: inline;
+}
+.social-icon ul li a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+.social-icon ul{
+    text-align: center;
+}
+#copyright {
+    text-align: center;
+    color:#ffffff;
+}
+.scroll-top{
+    float: right;
+}
+.scroll-top a {
+    background-color: #fff;
+}
+.scroll-top a i {
+    color: #272727;
+    font-size: 10px;
+}
