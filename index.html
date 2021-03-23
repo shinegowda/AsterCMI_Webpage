@@ -10,6 +10,7 @@
 
     <!-- BootStrap CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 
     <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -27,8 +28,22 @@
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
 
+    <script>
+        function myFunction(){
+            var checkIfEnd;
+            setInterval(function(){ 
+                let elmnt = document.getElementById("designRow");
+                elmnt.scrollLeft += 10;
+                if((checkIfEnd===elmnt.scrollLeft) && elmnt.scrollLeft!==0){
+                    elmnt.scrollLeft = 0;
+                }
+                checkIfEnd = elmnt.scrollLeft;
+             }, 100);
+        }
+    </script>
+
 </head>
-<body>
+<body onload="myFunction()">
 <header id="header">
     <div class="header-overlay">
 
@@ -462,23 +477,18 @@
 
             <div class="row">
 
-                <div class="col-md-12">
+                <div class="col-md-6">
 
                     <div class="section-title">
 
                         <h3>Testimonials</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
 
                     </div>
 
                 </div>
 
-                <div class="col-md-12">
-
-                    <div class="testimonials-description">
-
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
-
-                    </div>
+                <div class="col-md-6">      
 
                 </div>
 
@@ -487,57 +497,85 @@
         </div>
         <div class="container">
 
-            <div class="row">
+            <div class="row designRow" id="designRow">
 
-                <div class="col-md-12 wow bounceInDown">
+                <div class="col-12 col-md-5">
 
-                    <div id="carousel-testimonial" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carousel-testimonial" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carousel-testimonial" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carousel-testimonial" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item text-center active">
-                            <img src="images/testimonials.png" alt="testimonials">
-                            <div class="testimonials-caption">
-                            <h3>John Doe</h3>
-                            <h5>Software Engineer</h5>
-                            <p>It is a log established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item text-center">
-                            <img src="images/testimonials.png" alt="testimonials">
-                            <div class="testimonials-caption">
-                            <h3>John Doe</h3>
-                            <h5>Software Engineer</h5>
-                            <p>It is a log established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
-                            </div>
-                          </div>
-                          <div class="carousel-item text-center">
-                            <img src="images/testimonials.png" alt="testimonials">
-                            <div class="testimonials-caption">
-                            <h3>John Doe</h3>
-                            <h5>Software Engineer</h5>
-                            <p>It is a log established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
-                            </div>
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                      <div class="book-apointment">
-                      <a class="btn btn-apointment wow flash" href="#" role="button">Book An Appointment</a>
-                     </div>
+                    <div>
+                        <img src="images/testimonials.png" alt="testimonial_image">
+                        <p class="first"><span>John Doe</span>
+                        <span>Software Engineer</span></p>
+                        <img src="images/design.png" alt="testimonial_design">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-5">
+
+                    <div>
+                        <img src="images/testimonials.png" alt="testimonial_image">
+                        <p class="first"><span>John Doe</span>
+                        <span>Software Engineer</span></p>
+                        <img src="images/design.png" alt="testimonial_design">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-5">
+
+                    <div>
+                        <img src="images/testimonials.png" alt="testimonial_image">
+                        <p class="first"><span>John Doe</span>
+                        <span>Software Engineer</span></p>
+                        <img src="images/design.png" alt="testimonial_design">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-5">
+
+                    <div>
+                        <img src="images/testimonials.png" alt="testimonial_image">
+                        <p class="first"><span>John Doe</span>
+                        <span>Software Engineer</span></p>
+                        <img src="images/design.png" alt="testimonial_design">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-5">
+
+                    <div>
+                        <img src="images/testimonials.png" alt="testimonial_image">
+                        <p class="first"><span>John Doe</span>
+                        <span>Software Engineer</span></p>
+                        <img src="images/design.png" alt="testimonial_design">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-5">
+
+                    <div>
+                        <img src="images/testimonials.png" alt="testimonial_image">
+                        <p class="first"><span>John Doe</span>
+                        <span>Software Engineer</span></p>
+                        <img src="images/design.png" alt="testimonial_design">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
+                    </div>
+
                 </div>
 
             </div>
+
+        </div>
+        <div class="book-apointment">
+            <a class="btn btn-apointment wow flash" href="#" role="button">Book An Appointment</a>
         </div>
     </section>
     <footer class="footer">
